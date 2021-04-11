@@ -1,7 +1,7 @@
 import React, { Suspense, lazy } from "react";
 import { Redirect, Switch, Route } from "react-router-dom";
 import { LayoutSplashScreen, ContentRoute } from "../_mirrag/layout";
-import { BuilderPage } from "./pages/BuilderPage";
+import { User } from "./pages/User";
 import { MyPage } from "./pages/MyPage";
 import { DashboardPage } from "./pages/DashboardPage";
 
@@ -32,7 +32,7 @@ export default function BasePage() {
           <Redirect exact from="/" to="/dashboard" />
         }
         <ContentRoute path="/dashboard" component={DashboardPage} />
-        <ContentRoute path="/builder" component={BuilderPage} />
+        <ContentRoute path="/user" component={User} />
         <ContentRoute path="/my-page" component={MyPage} />
         <Route path="/google-material" component={GoogleMaterialPage} />
         <Route path="/react-bootstrap" component={ReactBootstrapPage} />

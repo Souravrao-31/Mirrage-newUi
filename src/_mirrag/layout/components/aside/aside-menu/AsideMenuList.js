@@ -18,6 +18,7 @@ export function AsideMenuList({ layoutProps }) {
   return (
     <>
       {/* begin::Menu Nav */}
+      <li className="nav-title">Mirrag</li>
       <ul className={`menu-nav ${layoutProps.ulClasses}`}>
         {/*begin::1 Level*/}
         <li
@@ -38,21 +39,17 @@ export function AsideMenuList({ layoutProps }) {
           className={`menu-item ${getMenuItemActive("/builder", false)}`}
           aria-haspopup="true"
         >
-          <NavLink className="menu-link" to="/builder">
+          <NavLink className="menu-link" to="/user">
             <span className="svg-icon menu-icon">
               <SVG src={toAbsoluteUrl("/media/svg/icons/Home/Library.svg")} />
             </span>
-            <span className="menu-text">Layout Builder</span>
+            <span className="menu-text">Users</span>
           </NavLink>
         </li>
         {/*end::1 Level*/}
 
         {/* Components */}
         {/* begin::section */}
-        <li className="menu-section ">
-          <h4 className="menu-text">Components</h4>
-          <i className="menu-icon flaticon-more-v2"></i>
-        </li>
         {/* end:: section */}
 
         {/* Material-UI */}
@@ -65,21 +62,17 @@ export function AsideMenuList({ layoutProps }) {
           aria-haspopup="true"
           data-menu-toggle="hover"
         >
-          <NavLink className="menu-link menu-toggle" to="/google-material">
+          <NavLink className="menu-link menu-toggle" to=" ">
             <span className="svg-icon menu-icon">
               <SVG src={toAbsoluteUrl("/media/svg/icons/Design/Cap-2.svg")} />
             </span>
-            <span className="menu-text">Material UI</span>
-            <i className="menu-arrow" />
+            <span className="menu-text">Calendar</span>
+           
           </NavLink>
           <div className="menu-submenu ">
-            <i className="menu-arrow" />
+         
             <ul className="menu-subnav">
-              <li className="menu-item  menu-item-parent" aria-haspopup="true">
-                <span className="menu-link">
-                  <span className="menu-text">Material UI</span>
-                </span>
-              </li>
+              
 
               {/* Inputs */}
               {/*begin::2 Level*/}
@@ -91,16 +84,7 @@ export function AsideMenuList({ layoutProps }) {
                 aria-haspopup="true"
                 data-menu-toggle="hover"
               >
-                <NavLink
-                  className="menu-link menu-toggle"
-                  to="/google-material/inputs"
-                >
-                  <i className="menu-bullet menu-bullet-dot">
-                    <span />
-                  </i>
-                  <span className="menu-text">Inputs</span>
-                  <i className="menu-arrow" />
-                </NavLink>
+                
                 <div className="menu-submenu ">
                   <i className="menu-arrow" />
                   <ul className="menu-subnav">
@@ -111,149 +95,27 @@ export function AsideMenuList({ layoutProps }) {
                       )}`}
                       aria-haspopup="true"
                     >
-                      <NavLink
-                        className="menu-link"
-                        to="/google-material/inputs/autocomplete"
-                      >
-                        <i className="menu-bullet menu-bullet-dot">
-                          <span />
-                        </i>
-                        <span className="menu-text">Autocomplete</span>
-                      </NavLink>
+                     
                     </li>
                     {/*end::3 Level*/}
 
                     {/*begin::3 Level*/}
-                    <li
-                      className={`menu-item ${getMenuItemActive(
-                        "/google-material/inputs/buttons"
-                      )}`}
-                      aria-haspopup="true"
-                    >
-                      <NavLink
-                        className="menu-link"
-                        to="/google-material/inputs/buttons"
-                      >
-                        <i className="menu-bullet menu-bullet-dot">
-                          <span />
-                        </i>
-                        <span className="menu-text">Buttons</span>
-                      </NavLink>
-                    </li>
+                   
                     {/*end::3 Level*/}
 
                     {/*begin::3 Level*/}
-                    <li
-                      className={`menu-item ${getMenuItemActive(
-                        "/google-material/inputs/checkboxes"
-                      )}`}
-                      aria-haspopup="true"
-                    >
-                      <NavLink
-                        className="menu-link"
-                        to="/google-material/inputs/checkboxes"
-                      >
-                        <i className="menu-bullet menu-bullet-dot">
-                          <span />
-                        </i>
-                        <span className="menu-text">Checkboxes</span>
-                      </NavLink>
-                    </li>
+                   
+                   
                     {/*end::3 Level*/}
 
                     {/*begin::3 Level*/}
-                    <li
-                      className={`menu-item ${getMenuItemActive(
-                        "/google-material/inputs/pickers"
-                      )}`}
-                      aria-haspopup="true"
-                    >
-                      <NavLink
-                        className="menu-link"
-                        to="/google-material/inputs/pickers"
-                      >
-                        <i className="menu-bullet menu-bullet-dot">
-                          <span />
-                        </i>
-                        <span className="menu-text">Pickers</span>
-                      </NavLink>
-                    </li>
+                  
                     {/*end::3 Level*/}
 
                     {/*begin::3 Level*/}
-                    <li
-                      className={`menu-item ${getMenuItemActive(
-                        "/google-material/inputs/radio-buttons"
-                      )}`}
-                      aria-haspopup="true"
-                    >
-                      <NavLink
-                        className="menu-link"
-                        to="/google-material/inputs/radio-buttons"
-                      >
-                        <i className="menu-bullet menu-bullet-dot">
-                          <span />
-                        </i>
-                        <span className="menu-text">Radio Buttons</span>
-                      </NavLink>
-                    </li>
-                    {/*end::3 Level*/}
-
-                    {/*begin::3 Level*/}
-                    <li
-                      className={`menu-item ${getMenuItemActive(
-                        "/google-material/inputs/selects"
-                      )}`}
-                      aria-haspopup="true"
-                    >
-                      <NavLink
-                        className="menu-link"
-                        to="/google-material/inputs/selects"
-                      >
-                        <i className="menu-bullet menu-bullet-dot">
-                          <span />
-                        </i>
-                        <span className="menu-text">Selects</span>
-                      </NavLink>
-                    </li>
-                    {/*end::3 Level*/}
-
-                    {/*begin::3 Level*/}
-                    <li
-                      className={`menu-item ${getMenuItemActive(
-                        "/google-material/inputs/switches"
-                      )}`}
-                      aria-haspopup="true"
-                    >
-                      <NavLink
-                        className="menu-link"
-                        to="/google-material/inputs/switches"
-                      >
-                        <i className="menu-bullet menu-bullet-dot">
-                          <span />
-                        </i>
-                        <span className="menu-text">Switches</span>
-                      </NavLink>
-                    </li>
-                    {/*end::3 Level*/}
-
-                    {/*begin::3 Level*/}
-                    <li
-                      className={`menu-item ${getMenuItemActive(
-                        "/google-material/inputs/text-fields"
-                      )}`}
-                      aria-haspopup="true"
-                    >
-                      <NavLink
-                        className="menu-link"
-                        to="/google-material/inputs/text-fields"
-                      >
-                        <i className="menu-bullet menu-bullet-dot">
-                          <span />
-                        </i>
-                        <span className="menu-text">Text Fields</span>
-                      </NavLink>
-                    </li>
+                  
+                   
+                   
                     {/*end::3 Level*/}
 
                     {/*begin::3 Level*/}
@@ -263,15 +125,7 @@ export function AsideMenuList({ layoutProps }) {
                       )}`}
                       aria-haspopup="true"
                     >
-                      <NavLink
-                        className="menu-link"
-                        to="/google-material/inputs/transfer-list"
-                      >
-                        <i className="menu-bullet menu-bullet-dot">
-                          <span />
-                        </i>
-                        <span className="menu-text">Transfer List</span>
-                      </NavLink>
+                      
                     </li>
                     {/*end::3 Level*/}
                   </ul>
@@ -289,16 +143,7 @@ export function AsideMenuList({ layoutProps }) {
                 aria-haspopup="true"
                 data-menu-toggle="hover"
               >
-                <NavLink
-                  className="menu-link menu-toggle"
-                  to="/google-material/navigation"
-                >
-                  <i className="menu-bullet menu-bullet-dot">
-                    <span />
-                  </i>
-                  <span className="menu-text">Navigation</span>
-                  <i className="menu-arrow" />
-                </NavLink>
+                
                 <div className="menu-submenu">
                   <i className="menu-arrow" />
                   <ul className="menu-subnav">
@@ -449,16 +294,7 @@ export function AsideMenuList({ layoutProps }) {
                 aria-haspopup="true"
                 data-menu-toggle="hover"
               >
-                <NavLink
-                  className="menu-link menu-toggle"
-                  to="/google-material/surfaces"
-                >
-                  <i className="menu-bullet menu-bullet-dot">
-                    <span />
-                  </i>
-                  <span className="menu-text">Surfaces</span>
-                  <i className="menu-arrow" />
-                </NavLink>
+               
                 <div className="menu-submenu">
                   <i className="menu-arrow" />
                   <ul className="menu-subnav">
@@ -552,16 +388,7 @@ export function AsideMenuList({ layoutProps }) {
                 aria-haspopup="true"
                 data-menu-toggle="hover"
               >
-                <NavLink
-                  className="menu-link menu-toggle"
-                  to="/google-material/feedback"
-                >
-                  <i className="menu-bullet menu-bullet-dot">
-                    <span />
-                  </i>
-                  <span className="menu-text">Feedback</span>
-                  <i className="menu-arrow" />
-                </NavLink>
+               
                 <div className="menu-submenu">
                   <i className="menu-arrow" />
                   <ul className="menu-subnav">
@@ -636,16 +463,7 @@ export function AsideMenuList({ layoutProps }) {
                 aria-haspopup="true"
                 data-menu-toggle="hover"
               >
-                <NavLink
-                  className="menu-link menu-toggle"
-                  to="/google-material/data-displays"
-                >
-                  <i className="menu-bullet menu-bullet-dot">
-                    <span />
-                  </i>
-                  <span className="menu-text">Data Display</span>
-                  <i className="menu-arrow" />
-                </NavLink>
+               
                 <div className="menu-submenu">
                   <i className="menu-arrow" />
                   <ul className="menu-subnav">
@@ -834,16 +652,7 @@ export function AsideMenuList({ layoutProps }) {
                 aria-haspopup="true"
                 data-menu-toggle="hover"
               >
-                <NavLink
-                  className="menu-link menu-toggle"
-                  to="/google-material/utils"
-                >
-                  <i className="menu-bullet menu-bullet-dot">
-                    <span />
-                  </i>
-                  <span className="menu-text">Utils</span>
-                  <i className="menu-arrow" />
-                </NavLink>
+              
                 <div className="menu-submenu">
                   <i className="menu-arrow" />
                   <ul className="menu-subnav">
@@ -994,16 +803,7 @@ export function AsideMenuList({ layoutProps }) {
                 aria-haspopup="true"
                 data-menu-toggle="hover"
               >
-                <NavLink
-                  className="menu-link menu-toggle"
-                  to="/google-material/layout"
-                >
-                  <i className="menu-bullet menu-bullet-dot">
-                    <span />
-                  </i>
-                  <span className="menu-text">Layout</span>
-                  <i className="menu-arrow" />
-                </NavLink>
+                
                 <div className="menu-submenu">
                   <i className="menu-arrow" />
                   <ul className="menu-subnav">
@@ -1108,6 +908,26 @@ export function AsideMenuList({ layoutProps }) {
             </ul>
           </div>
         </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         {/*end::1 Level*/}
 
         {/* Bootstrap */}
@@ -1120,13 +940,15 @@ export function AsideMenuList({ layoutProps }) {
           aria-haspopup="true"
           data-menu-toggle="hover"
         >
-          <NavLink className="menu-link menu-toggle" to="/react-bootstrap">
+          <NavLink className="menu-link menu-toggle" to=" ">
             <span className="svg-icon menu-icon">
               <SVG src={toAbsoluteUrl("/media/svg/icons/Shopping/Box2.svg")} />
             </span>
-            <span className="menu-text">Bootstrap</span>
+            <span className="menu-text">Projects</span>
             <i className="menu-arrow" />
           </NavLink>
+
+
           <div className="menu-submenu ">
             <ul className="menu-subnav">
               <ul className="menu-subnav">
@@ -1134,9 +956,7 @@ export function AsideMenuList({ layoutProps }) {
                   className="menu-item  menu-item-parent"
                   aria-haspopup="true"
                 >
-                  <span className="menu-link">
-                    <span className="menu-text">Bootstrap</span>
-                  </span>
+                 
                 </li>
 
                 {/*begin::2 Level*/}
@@ -1146,11 +966,11 @@ export function AsideMenuList({ layoutProps }) {
                   )}`}
                   aria-haspopup="true"
                 >
-                  <NavLink className="menu-link" to="/react-bootstrap/alert">
+                  <NavLink className="menu-link" to=" ">
                     <i className="menu-bullet menu-bullet-dot">
                       <span />
                     </i>
-                    <span className="menu-text">Alerts</span>
+                    <span className="menu-text">Projects 1</span>
                   </NavLink>
                 </li>
                 {/*end::2 Level*/}
@@ -1162,32 +982,17 @@ export function AsideMenuList({ layoutProps }) {
                   )}`}
                   aria-haspopup="true"
                 >
-                  <NavLink className="menu-link" to="/react-bootstrap/badge">
+                  <NavLink className="menu-link" to=" ">
                     <i className="menu-bullet menu-bullet-dot">
                       <span />
                     </i>
-                    <span className="menu-text">Badge</span>
+                    <span className="menu-text">Project 2</span>
                   </NavLink>
                 </li>
                 {/*end::2 Level*/}
 
                 {/*begin::2 Level*/}
-                <li
-                  className={`menu-item ${getMenuItemActive(
-                    "/react-bootstrap/breadcrumb"
-                  )}`}
-                  aria-haspopup="true"
-                >
-                  <NavLink
-                    className="menu-link"
-                    to="/react-bootstrap/breadcrumb"
-                  >
-                    <i className="menu-bullet menu-bullet-dot">
-                      <span />
-                    </i>
-                    <span className="menu-text">Breadcrumb</span>
-                  </NavLink>
-                </li>
+               
                 {/*end::2 Level*/}
 
                 {/*begin::2 Level*/}
@@ -1197,383 +1002,50 @@ export function AsideMenuList({ layoutProps }) {
                   )}`}
                   aria-haspopup="true"
                 >
-                  <NavLink className="menu-link" to="/react-bootstrap/buttons">
-                    <i className="menu-bullet menu-bullet-dot">
-                      <span />
-                    </i>
-                    <span className="menu-text">Buttons</span>
-                  </NavLink>
+                 
                 </li>
                 {/*end::2 Level*/}
 
                 {/*begin::2 Level*/}
-                <li
-                  className={`menu-item ${getMenuItemActive(
-                    "/react-bootstrap/button-group"
-                  )}`}
-                  aria-haspopup="true"
-                >
-                  <NavLink
-                    className="menu-link"
-                    to="/react-bootstrap/button-group"
-                  >
-                    <i className="menu-bullet menu-bullet-dot">
-                      <span />
-                    </i>
-                    <span className="menu-text">Button Group</span>
-                  </NavLink>
-                </li>
+               
+               
+                {/*end::2 Level*/}
+
+              
                 {/*end::2 Level*/}
 
                 {/*begin::2 Level*/}
-                <li
-                  className={`menu-item ${getMenuItemActive(
-                    "/react-bootstrap/cards"
-                  )}`}
-                  aria-haspopup="true"
-                >
-                  <NavLink className="menu-link" to="/react-bootstrap/cards">
-                    <i className="menu-bullet menu-bullet-dot">
-                      <span />
-                    </i>
-                    <span className="menu-text">Cards</span>
-                  </NavLink>
-                </li>
+              
                 {/*end::2 Level*/}
 
                 {/*begin::2 Level*/}
-                <li
-                  className={`menu-item ${getMenuItemActive(
-                    "/react-bootstrap/carousel"
-                  )}`}
-                  aria-haspopup="true"
-                >
-                  <NavLink className="menu-link" to="/react-bootstrap/carousel">
-                    <i className="menu-bullet menu-bullet-dot">
-                      <span />
-                    </i>
-                    <span className="menu-text">Carousel</span>
-                  </NavLink>
-                </li>
+               
                 {/*end::2 Level*/}
 
                 {/*begin::2 Level*/}
-                <li
-                  className={`menu-item ${getMenuItemActive(
-                    "/react-bootstrap/dropdowns"
-                  )}`}
-                  aria-haspopup="true"
-                >
-                  <NavLink
-                    className="menu-link"
-                    to="/react-bootstrap/dropdowns"
-                  >
-                    <i className="menu-bullet menu-bullet-dot">
-                      <span />
-                    </i>
-                    <span className="menu-text">Dropdowns</span>
-                  </NavLink>
-                </li>
+              
                 {/*end::2 Level*/}
 
                 {/*begin::2 Level*/}
-                <li
-                  className={`menu-item ${getMenuItemActive(
-                    "/react-bootstrap/forms"
-                  )}`}
-                  aria-haspopup="true"
-                >
-                  <NavLink className="menu-link" to="/react-bootstrap/forms">
-                    <i className="menu-bullet menu-bullet-dot">
-                      <span />
-                    </i>
-                    <span className="menu-text">Forms</span>
-                  </NavLink>
-                </li>
+              
+               
+                {/*end::2 Level*/}
+
+               
                 {/*end::2 Level*/}
 
                 {/*begin::2 Level*/}
-                <li
-                  className={`menu-item ${getMenuItemActive(
-                    "/react-bootstrap/input-group"
-                  )}`}
-                  aria-haspopup="true"
-                >
-                  <NavLink
-                    className="menu-link"
-                    to="/react-bootstrap/input-group"
-                  >
-                    <i className="menu-bullet menu-bullet-dot">
-                      <span />
-                    </i>
-                    <span className="menu-text">Input Group</span>
-                  </NavLink>
-                </li>
+               
+               
+                {/*end::2 Level*/}
+
+               
+
+               
                 {/*end::2 Level*/}
 
                 {/*begin::2 Level*/}
-                <li
-                  className={`menu-item ${getMenuItemActive(
-                    "/react-bootstrap/images"
-                  )}`}
-                  aria-haspopup="true"
-                >
-                  <NavLink className="menu-link" to="/react-bootstrap/images">
-                    <i className="menu-bullet menu-bullet-dot">
-                      <span />
-                    </i>
-                    <span className="menu-text">Images</span>
-                  </NavLink>
-                </li>
-                {/*end::2 Level*/}
-
-                {/*begin::2 Level*/}
-                <li
-                  className={`menu-item ${getMenuItemActive(
-                    "/react-bootstrap/figures"
-                  )}`}
-                  aria-haspopup="true"
-                >
-                  <NavLink className="menu-link" to="/react-bootstrap/figures">
-                    <i className="menu-bullet menu-bullet-dot">
-                      <span />
-                    </i>
-                    <span className="menu-text">Figures</span>
-                  </NavLink>
-                </li>
-                {/*end::2 Level*/}
-
-                {/*begin::2 Level*/}
-                <li
-                  className={`menu-item ${getMenuItemActive(
-                    "/react-bootstrap/jumbotron"
-                  )}`}
-                  aria-haspopup="true"
-                >
-                  <NavLink
-                    className="menu-link"
-                    to="/react-bootstrap/jumbotron"
-                  >
-                    <i className="menu-bullet menu-bullet-dot">
-                      <span />
-                    </i>
-                    <span className="menu-text">Jumbotron</span>
-                  </NavLink>
-                </li>
-                {/*end::2 Level*/}
-
-                {/*begin::2 Level*/}
-                <li
-                  className={`menu-item ${getMenuItemActive(
-                    "/react-bootstrap/list-group"
-                  )}`}
-                  aria-haspopup="true"
-                >
-                  <NavLink
-                    className="menu-link"
-                    to="/react-bootstrap/list-group"
-                  >
-                    <i className="menu-bullet menu-bullet-dot">
-                      <span />
-                    </i>
-                    <span className="menu-text">List group</span>
-                  </NavLink>
-                </li>
-                {/*end::2 Level*/}
-
-                {/*begin::2 Level*/}
-                <li
-                  className={`menu-item ${getMenuItemActive(
-                    "/react-bootstrap/modal"
-                  )}`}
-                  aria-haspopup="true"
-                >
-                  <NavLink className="menu-link" to="/react-bootstrap/modal">
-                    <i className="menu-bullet menu-bullet-dot">
-                      <span />
-                    </i>
-                    <span className="menu-text">Modal</span>
-                  </NavLink>
-                </li>
-                {/*end::2 Level*/}
-
-                {/*begin::2 Level*/}
-                <li
-                  className={`menu-item ${getMenuItemActive(
-                    "/react-bootstrap/navs"
-                  )}`}
-                  aria-haspopup="true"
-                >
-                  <NavLink className="menu-link" to="/react-bootstrap/navs">
-                    <i className="menu-bullet menu-bullet-dot">
-                      <span />
-                    </i>
-                    <span className="menu-text">Navs</span>
-                  </NavLink>
-                </li>
-                {/*end::2 Level*/}
-
-                {/*begin::2 Level*/}
-                <li
-                  className={`menu-item ${getMenuItemActive(
-                    "/react-bootstrap/navbar"
-                  )}`}
-                  aria-haspopup="true"
-                >
-                  <NavLink className="menu-link" to="/react-bootstrap/navbar">
-                    <i className="menu-bullet menu-bullet-dot">
-                      <span />
-                    </i>
-                    <span className="menu-text">Navbar</span>
-                  </NavLink>
-                </li>
-                {/*end::2 Level*/}
-
-                {/*begin::2 Level*/}
-                <li
-                  className={`menu-item ${getMenuItemActive(
-                    "/react-bootstrap/overlays"
-                  )}`}
-                  aria-haspopup="true"
-                >
-                  <NavLink className="menu-link" to="/react-bootstrap/overlays">
-                    <i className="menu-bullet menu-bullet-dot">
-                      <span />
-                    </i>
-                    <span className="menu-text">Overlays</span>
-                  </NavLink>
-                </li>
-                {/*end::2 Level*/}
-
-                {/*begin::2 Level*/}
-                <li
-                  className={`menu-item ${getMenuItemActive(
-                    "/react-bootstrap/pagination"
-                  )}`}
-                  aria-haspopup="true"
-                >
-                  <NavLink
-                    className="menu-link"
-                    to="/react-bootstrap/pagination"
-                  >
-                    <i className="menu-bullet menu-bullet-dot">
-                      <span />
-                    </i>
-                    <span className="menu-text">Pagination</span>
-                  </NavLink>
-                </li>
-                {/*end::2 Level*/}
-
-                {/*begin::2 Level*/}
-                <li
-                  className={`menu-item ${getMenuItemActive(
-                    "/react-bootstrap/popovers"
-                  )}`}
-                  aria-haspopup="true"
-                >
-                  <NavLink className="menu-link" to="/react-bootstrap/popovers">
-                    <i className="menu-bullet menu-bullet-dot">
-                      <span />
-                    </i>
-                    <span className="menu-text">Popovers</span>
-                  </NavLink>
-                </li>
-                {/*end::2 Level*/}
-
-                {/*begin::2 Level*/}
-                <li
-                  className={`menu-item ${getMenuItemActive(
-                    "/react-bootstrap/progress"
-                  )}`}
-                  aria-haspopup="true"
-                >
-                  <NavLink className="menu-link" to="/react-bootstrap/progress">
-                    <i className="menu-bullet menu-bullet-dot">
-                      <span />
-                    </i>
-                    <span className="menu-text">Progress</span>
-                  </NavLink>
-                </li>
-                {/*end::2 Level*/}
-
-                {/*begin::2 Level*/}
-                <li
-                  className={`menu-item ${getMenuItemActive(
-                    "/react-bootstrap/spinners"
-                  )}`}
-                  aria-haspopup="true"
-                >
-                  <NavLink className="menu-link" to="/react-bootstrap/spinners">
-                    <i className="menu-bullet menu-bullet-dot">
-                      <span />
-                    </i>
-                    <span className="menu-text">Spinners</span>
-                  </NavLink>
-                </li>
-                {/*end::2 Level*/}
-
-                {/*begin::2 Level*/}
-                <li
-                  className={`menu-item ${getMenuItemActive(
-                    "/react-bootstrap/table"
-                  )}`}
-                  aria-haspopup="true"
-                >
-                  <NavLink className="menu-link" to="/react-bootstrap/table">
-                    <i className="menu-bullet menu-bullet-dot">
-                      <span />
-                    </i>
-                    <span className="menu-text">Table</span>
-                  </NavLink>
-                </li>
-                {/*end::2 Level*/}
-
-                {/*begin::2 Level*/}
-                <li
-                  className={`menu-item ${getMenuItemActive(
-                    "/react-bootstrap/tabs"
-                  )}`}
-                  aria-haspopup="true"
-                >
-                  <NavLink className="menu-link" to="/react-bootstrap/tabs">
-                    <i className="menu-bullet menu-bullet-dot">
-                      <span />
-                    </i>
-                    <span className="menu-text">Tabs</span>
-                  </NavLink>
-                </li>
-                {/*end::2 Level*/}
-
-                {/*begin::2 Level*/}
-                <li
-                  className={`menu-item ${getMenuItemActive(
-                    "/react-bootstrap/tooltips"
-                  )}`}
-                  aria-haspopup="true"
-                >
-                  <NavLink className="menu-link" to="/react-bootstrap/tooltips">
-                    <i className="menu-bullet menu-bullet-dot">
-                      <span />
-                    </i>
-                    <span className="menu-text">Tooltips</span>
-                  </NavLink>
-                </li>
-                {/*end::2 Level*/}
-
-                {/*begin::2 Level*/}
-                <li
-                  className={`menu-item ${getMenuItemActive(
-                    "/react-bootstrap/toasts"
-                  )}`}
-                  aria-haspopup="true"
-                >
-                  <NavLink className="menu-link" to="/react-bootstrap/toasts">
-                    <i className="menu-bullet menu-bullet-dot">
-                      <span />
-                    </i>
-                    <span className="menu-text">Toasts</span>
-                  </NavLink>
-                </li>
+              
                 {/*end::2 Level*/}
               </ul>
             </ul>
@@ -1581,12 +1053,7 @@ export function AsideMenuList({ layoutProps }) {
         </li>
         {/*end::1 Level*/}
 
-        {/* Applications */}
-        {/* begin::section */}
-        <li className="menu-section ">
-          <h4 className="menu-text">Applications</h4>
-          <i className="menu-icon flaticon-more-v2"></i>
-        </li>
+        
         {/* end:: section */}
 
         {/* eCommerce */}
@@ -1599,12 +1066,7 @@ export function AsideMenuList({ layoutProps }) {
           aria-haspopup="true"
           data-menu-toggle="hover"
         >
-          <NavLink className="menu-link menu-toggle" to="/e-commerce">
-            <span className="svg-icon menu-icon">
-              <SVG src={toAbsoluteUrl("/media/svg/icons/Shopping/Bag2.svg")} />
-            </span>
-            <span className="menu-text">eCommerce</span>
-          </NavLink>
+         
           <div className="menu-submenu">
             <i className="menu-arrow" />
             <ul className="menu-subnav">
@@ -1653,7 +1115,7 @@ export function AsideMenuList({ layoutProps }) {
           className={`menu-item ${getMenuItemActive("/user-profile", false)}`}
           aria-haspopup="true"
         >
-          <NavLink className="menu-link" to="/user-profile">
+          <NavLink className="menu-link" to="">
             <span className="svg-icon menu-icon">
               <SVG
                 src={toAbsoluteUrl(
@@ -1666,12 +1128,7 @@ export function AsideMenuList({ layoutProps }) {
         </li>
         {/*end::1 Level*/}
 
-        {/* Custom */}
-        {/* begin::section */}
-        <li className="menu-section ">
-          <h4 className="menu-text">Custom</h4>
-          <i className="menu-icon flaticon-more-v2"></i>
-        </li>
+        
         {/* end:: section */}
 
         {/* Error Pages */}
@@ -1684,15 +1141,7 @@ export function AsideMenuList({ layoutProps }) {
           aria-haspopup="true"
           data-menu-toggle="hover"
         >
-          <NavLink className="menu-link menu-toggle" to="/error">
-            <span className="svg-icon menu-icon">
-              <SVG
-                src={toAbsoluteUrl("/media/svg/icons/Code/Error-circle.svg")}
-              />
-            </span>
-            <span className="menu-text">Error Pages</span>
-            <i className="menu-arrow" />
-          </NavLink>
+          
           <div className="menu-submenu ">
             <i className="menu-arrow" />
             <ul className="menu-subnav">
